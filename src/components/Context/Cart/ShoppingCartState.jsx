@@ -77,7 +77,6 @@ const ShoppingCartState = ( props ) => {
     let auxCart = JSON.parse(sessionStorage.getItem("shoppingCart"));
     
     if(auxCart){
-      console.log(auxCart);
       dispatch( {
         type: GET_ALL_PRODUCT,
         payload:auxCart

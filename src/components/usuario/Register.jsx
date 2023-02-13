@@ -19,13 +19,13 @@ function Register() {
     const n = name.current.value;
     let result = null;
     try {
-      result = await signUp(u, p);
+      result = await signUp(u, p,n,e);
     } catch (error) {
       console.log(error);
     }
 
     if (result) {
-      navigate("../Perfil");
+      navigate("../Login");
     } else {
       console.log("no");
       alert("error en usuario y clave intente nuevamente");

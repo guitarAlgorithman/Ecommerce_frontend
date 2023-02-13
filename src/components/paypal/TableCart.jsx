@@ -7,10 +7,10 @@ import CleanCart from "./CleanCart";
 
 function TableCart(props) {
   let compras = props.compras;
-  let total= props.total
-  const auth=useAuth()
+  let total = props.total;
+  const auth = useAuth();
 
-  useEffect(()=>{},[CleanCart])
+  useEffect(() => {}, [CleanCart]);
   return (
     <div>
       <Container>
@@ -32,16 +32,23 @@ function TableCart(props) {
         <Row className="mt-5 text-center">
           <p>El monto de su compra es: ${total}</p>
         </Row>
-        <div className="text-center"> <CleanCart/></div>
-       
+        <div className="text-center">
+          {" "}
+          <CleanCart />
+        </div>
       </Container>
       {auth.user ? (
-      <Container className='mt-3 text-center'>
-        <Checkout_button value={total}/>
-    </Container>) : 
-    (<Container className='mt-3 text-center'>
-        <p className="text-center">Favor ingrese a su cuenta para poder efectuar el pago: <a href="./Login">Login</a></p>
-    </Container>)}
+        <Container className="mt-3 text-center">
+          <Checkout_button value={total} />
+        </Container>
+      ) : (
+        <Container className="mt-3 text-center">
+          <p className="text-center">
+            Favor ingrese a su cuenta para poder efectuar el pago:{" "}
+            <a href="./Login">Login</a>
+          </p>
+        </Container>
+      )}
     </div>
   );
 }

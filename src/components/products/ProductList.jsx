@@ -15,7 +15,8 @@ function ProductList() {
   },[])
   
   return (
-    <Container>
+    <>
+    <Container className="text-center justify-content-center">
       <header>
       <h1>Seleccione el servicio de su interés:</h1>
       </header>
@@ -28,6 +29,9 @@ function ProductList() {
       </div>
 
     </Container>
+    
+    <div className="m-5">&nbsp;</div>
+    </>
   )
 }
 

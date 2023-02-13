@@ -39,4 +39,6 @@ const signUp = async (username, password,name,email)=>{
   return result;
 }
 
+
+
 export { signIn, readToken,signUp };

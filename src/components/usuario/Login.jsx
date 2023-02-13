@@ -26,7 +26,7 @@ function Login() {
 
     if (result) {
       console.log(result);
-      auth.login(u)
+      auth.login(u,result._id)
       navigate("../Perfil");
     } else {
       alert("error en usuario y clave intente nuevamente");

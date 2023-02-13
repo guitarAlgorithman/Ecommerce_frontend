@@ -1,0 +1,56 @@
+
+.footer {
+  position: fixed;
+
+  bottom: 0%;
+  width: 100%;
+
+  text-align: center;
+}
+li
+{
+  list-style-type: none;
+  margin-left: 1vw;
+}
+
+li:first-child
+{
+  margin:0;
+}
+
+
+
+.containerB
+{
+    width: 100%;
+    position:  fixed;
+    margin-top: auto;
+    align-items:center;
+    bottom: 0%;
+  background-color: beige;
+
+}
+
+.copyright,  .impressum
+{
+  text-align: center;
+}
+
+.logo
+{
+  height: 5vh;
+}
+
+@media (max-width: 768px) 
+{
+  li
+  {
+    margin-left: 0;
+    margin-bottom: 1vh;
+  }
+  
+  .sozial
+  {
+    margin-bottom: 1vh;
+  }
+}
