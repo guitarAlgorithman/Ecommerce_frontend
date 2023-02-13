@@ -12,7 +12,7 @@ function Compras(props) {
     salida(props.token, props.id);
   }, []);
 
-  console.log(comprado);
+//   console.log(comprado);
   return (
     <>
       <div>Compras</div>
