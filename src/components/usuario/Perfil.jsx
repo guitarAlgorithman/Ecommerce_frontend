@@ -27,7 +27,7 @@ function Perfil(props) {
 
 
 
-  if(Object.keys(data).length==0){console.log("loading");}
+  if(Object.keys(data).length==0){}
   return (
     <div>
       <Container>
