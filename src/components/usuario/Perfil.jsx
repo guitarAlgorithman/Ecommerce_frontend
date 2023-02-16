@@ -15,7 +15,7 @@ function Perfil(props) {
   useEffect(() => {
     const loadUserData = async () => {
       const salida = await axios.get(
-        `http://localhost:3000/user/findOneP/${user}`,
+        `${import.meta.env.VITE_BASE_URL}user/findOneP/${user}`,
         bodyParameters
       );
       setData(salida.data.result[0]);

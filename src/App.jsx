@@ -16,6 +16,7 @@ import Footer from "./components/partials/Footer";
 import Header from "./components/partials/Header";
 
 function App() {
+  
   return (
     <div>
       <AuthProvider>

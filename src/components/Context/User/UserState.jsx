@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:3000";
+const baseURL = `${import.meta.env.VITE_BASE_URL}`;
 const signIn_API = async (username, password) => {
   const datos = {
     username: username,
     password: password
   };
-  const result = await axios.post(`${baseURL}/user/signin`, datos);
+  const result = await axios.post(`${baseURL}user/signin`, datos);
   return result;
 }
 
@@ -35,7 +35,7 @@ const signUp = async (username, password,name,email)=>{
     name:name,
     email:email,
   };
-  const result = await axios.post(`${baseURL}/user/signup`, datos);
+  const result = await axios.post(`${baseURL}user/signup`, datos);
   return result;
 }
 

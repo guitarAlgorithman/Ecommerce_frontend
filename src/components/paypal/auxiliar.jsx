@@ -8,7 +8,7 @@ const guardarCompra = async (productos,quantity,price) => {
     const data = {quantity:quantity,price:price};
 
     const salida = await axios.post(
-      `http://localhost:3000/comprar/buy/${productos}`,
+      `${import.meta.env.VITE_BASE_URL}comprar/buy/${productos}`,
       data,
       {
         headers: {
@@ -30,7 +30,7 @@ const getCompras = async (token,id) => {
     // console.log(token);
     // console.log(id);
     const salida = await axios.get(
-      `http://localhost:3000/comprar/compras/${id}`,
+      `${import.meta.env.VITE_BASE_URL}comprar/compras/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
