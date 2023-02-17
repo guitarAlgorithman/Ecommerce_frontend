@@ -13,6 +13,8 @@ const Checkout = (props) => {
   let { removeProduct, getProducts } = useContext(ShoppingCartContext);
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
   const [currency, setCurrency] = useState(options.currency);
+  const [total,setTotal]=useState(0)
+
 
 
 
@@ -28,11 +30,12 @@ const Checkout = (props) => {
   };
 
   const onCreateOrder = (data, actions) => {
+    console.log(total);
     return actions.order.create({
       purchase_units: [
         {
           amount: {
-            value: props.value.value,
+            value: total,
           },
         },
       ],
@@ -49,11 +52,11 @@ const Checkout = (props) => {
     return actions.order.capture().then((details) => {
       const name = details.payer.name.given_name;
       alert(
-        `Compra exitosa por $${props.value.value} pronto le llegará un correo ${name}`
+        `Compra exitosa por $${total} pronto será enviado a su perfil ${name}`
       );
       
       removeProduct();
-      navigate("./Perfil");
+      navigate("../Perfil");
     });
   };
 

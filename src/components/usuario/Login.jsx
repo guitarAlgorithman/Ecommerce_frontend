@@ -27,7 +27,7 @@ function Login() {
     if (result) {
 
       auth.login(u,result._id)
-      navigate("./Perfil");
+      navigate("../Ecommerce_frontend/Perfil");
     } else {
       alert("error en usuario y clave intente nuevamente");
     }

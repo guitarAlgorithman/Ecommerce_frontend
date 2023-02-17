@@ -12,7 +12,7 @@ function CleanCart() {
 
   const removeAll=()=>{    
     removeProduct()
-    navigate("/")
+    navigate("Ecommerce_frontend")
     alert("Carro de compras limpio")
   }
 

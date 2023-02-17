@@ -37,7 +37,7 @@ function ProductCard(props) {
      <AddCart product={producto}/>
      </Col>
      <Col>
-      <Button variant="secondary" className="m-2" onClick={() => navigate(`./product/${props.name}`)}> Detalles</Button>
+      <Button variant="secondary" className="m-2" onClick={() => navigate(`Ecommerce_frontend/product/${props.name}`)}> Detalles</Button>
       </Col>
       </Row>
     </Card.Body>
