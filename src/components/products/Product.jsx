@@ -27,7 +27,7 @@ function Product() {
         <img src={producto.imgUrl} />
         <h1 className="display-4">{producto.name}</h1>
         <p className="lead">{producto.long_description}.</p>
-        <p className="lead">$ {producto.price} USD</p>
+
         <AddCart product={producto}/>
         {/* <a className="btn btn-primary btn-lg" href="#" role="button" 
         onClick={()=>{
