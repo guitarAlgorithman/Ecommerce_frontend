@@ -25,7 +25,7 @@ function Register() {
     }
 
     if (result) {
-      navigate("../Login");
+      navigate("./Login");
     } else {
       console.log("no");
       alert("error en usuario y clave intente nuevamente");

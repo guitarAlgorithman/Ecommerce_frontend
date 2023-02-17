@@ -11,7 +11,7 @@ function Logout() {
         sessionStorage.removeItem("shoppingCart");
         sessionStorage.removeItem("token");
         setTimeout(() => {
-          navigate('/')
+          navigate('./')
         }, 2000)
       }, [])
     

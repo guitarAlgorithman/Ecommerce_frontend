@@ -26,13 +26,13 @@ function App() {
           <ProductState>
             <Routes>
               <Route path="Ecommerce_frontend" element={<ProductList />} />
-              <Route index element={<ProductList />} />
-              <Route path="product/:id" element={<Product />} />
-              <Route path="Login" element={<Login />} />
-              <Route path="Cart" element={<Cart />} />
-              <Route path="Perfil" element={<Perfil />} />
-              <Route path="Signin" element={<Register />} />
-              <Route path="Logout" element={<Logout />} />
+              {/* <Route index element={<ProductList />} /> */}
+              <Route path="./product/:id" element={<Product />} />
+              <Route path="./Login" element={<Login />} />
+              <Route path="./Cart" element={<Cart />} />
+              <Route path="./Perfil" element={<Perfil />} />
+              <Route path="./Signin" element={<Register />} />
+              <Route path="./Logout" element={<Logout />} />
             </Routes>
           </ProductState>
         </ShoppingCartState>

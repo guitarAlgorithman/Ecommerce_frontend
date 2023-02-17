@@ -17,7 +17,7 @@ const navigate = useNavigate();
 
   const handleClose = () => {
     setShow(false);
-    navigate("/Cart")
+    navigate("./Cart")
       
     }
 

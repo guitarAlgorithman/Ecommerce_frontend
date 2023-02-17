@@ -53,7 +53,7 @@ const Checkout = (props) => {
       );
       
       removeProduct();
-      navigate("/Perfil");
+      navigate("./Perfil");
     });
   };
 
