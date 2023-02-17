@@ -18,8 +18,8 @@ function Compras(props) {
       <div>Compras</div>
       <Container className="mb-5">
       {comprado ? (
-        comprado.map((x) => (
-          <p>
+        comprado.map((x,i) => (
+          <p key={i} >
             {" "}
             Producto: {x.product}, Cantidad:{ x.quantity }, Precio (unitario): {x.price}, fecha:{x.date}
           </p>

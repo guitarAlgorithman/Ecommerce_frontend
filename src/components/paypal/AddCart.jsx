@@ -11,20 +11,20 @@ function AddCart(props) {
   const shoppingCartCtx = useContext(ShoppingCartContext);
 const { addProduct } = shoppingCartCtx;
 
-const navigate = useNavigate();
+
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
     setShow(false);
-    navigate("./Cart")
+ 
       
     }
 
   
   
   const handleShow = () => {  
-    console.log(props.product);  
+    //console.log(props.product);  
     addProduct(props.product);
     setShow(true);
   }

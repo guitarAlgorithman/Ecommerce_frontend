@@ -22,6 +22,7 @@ function ProductCard(props) {
   }, []);
   
   return (
+    <>
     <Card style={{ width: '18rem' }} className="m-2">
     <Card.Img variant="top" src={props.url} />
     <Card.Body>
@@ -30,18 +31,20 @@ function ProductCard(props) {
         {props.description}
       </Card.Text>
       <Card.Subtitle>
-            ${props.price}
+            ${props.price} USD
     </Card.Subtitle>
     <Row>
     <Col>
      <AddCart product={producto}/>
      </Col>
      <Col>
-      <Button variant="secondary" className="m-2" onClick={() => navigate(`Ecommerce_frontend/product/${props.name}`)}> Detalles</Button>
+      <Button variant="secondary" className="m-2" onClick={() => navigate(`product/${props.name}`)}> Detalles</Button>
       </Col>
       </Row>
     </Card.Body>
   </Card>
+  
+  </>
   )
 }
 

@@ -13,9 +13,15 @@ const Checkout = (props) => {
   let { removeProduct, getProducts } = useContext(ShoppingCartContext);
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
   const [currency, setCurrency] = useState(options.currency);
-  const [total,setTotal]=useState(0)
+  
+  const getTotal=(compras)=>{
+    let total=0
+    if(!!compras){
+    compras.forEach(x=>total+=x.precio*x.quantity)}
+    return total
+   }
 
-
+   
 
 
   const onCurrencyChange = ({ target: { value } }) => {
@@ -30,12 +36,12 @@ const Checkout = (props) => {
   };
 
   const onCreateOrder = (data, actions) => {
-    console.log(total);
+    console.log(getTotal(getProducts()));
     return actions.order.create({
       purchase_units: [
         {
           amount: {
-            value: total,
+            value: getTotal(getProducts()),
           },
         },
       ],
@@ -52,11 +58,11 @@ const Checkout = (props) => {
     return actions.order.capture().then((details) => {
       const name = details.payer.name.given_name;
       alert(
-        `Compra exitosa por $${total} pronto será enviado a su perfil ${name}`
+        `Compra exitosa por $${getTotal(getProducts())} USD pronto será enviado a su perfil ${name}`
       );
       
       removeProduct();
-      navigate("../Perfil");
+      navigate("../../Ecommerce_frontend/Perfil");
     });
   };
 

@@ -21,7 +21,8 @@ function Product() {
   }, []);
 
   return (
-    <div className="text-center jumbotron">
+    
+    <div className="text-center jumbotron mb-5">
       <div className="bg-light p-5 rounded-lg m-3">
         <img src={producto.imgUrl} />
         <h1 className="display-4">{producto.name}</h1>
@@ -34,7 +35,11 @@ function Product() {
           Agregar
         </a> */}
       </div>
+    
+      <div className="m-5">&nbsp;</div>
     </div>
+    
+    
   );
 };
 //ok
