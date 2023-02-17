@@ -25,14 +25,14 @@ function App() {
         <ShoppingCartState>
           <ProductState>
             <Routes>
-              <Route path="/Ecommerce_frontend" element={<ProductList />} />
+              <Route path="./Ecommerce_frontend" element={<ProductList />} />
               {/* <Route index element={<ProductList />} /> */}
-              <Route path="Ecommerce_frontend/product/:id" element={<Product />} />
-              <Route path="Ecommerce_frontend/Login" element={<Login />} />
-              <Route path="Ecommerce_frontend/Cart" element={<Cart />} />
-              <Route path="Ecommerce_frontend/Perfil" element={<Perfil />} />
-              <Route path="Ecommerce_frontend/Signin" element={<Register />} />
-              <Route path="Ecommerce_frontend/Logout" element={<Logout />} />
+              <Route path="./Ecommerce_frontend/product/:id" element={<Product />} />
+              <Route path="./Ecommerce_frontend/Login" element={<Login />} />
+              <Route path="./Ecommerce_frontend/Cart" element={<Cart />} />
+              <Route path="./Ecommerce_frontend/Perfil" element={<Perfil />} />
+              <Route path="./Ecommerce_frontend/Signin" element={<Register />} />
+              <Route path="./Ecommerce_frontend/Logout" element={<Logout />} />
             </Routes>
           </ProductState>
         </ShoppingCartState>
