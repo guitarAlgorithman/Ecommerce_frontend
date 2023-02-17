@@ -25,7 +25,7 @@ function Login() {
     }
 
     if (result) {
-      console.log(result);
+
       auth.login(u,result._id)
       navigate("../Perfil");
     } else {

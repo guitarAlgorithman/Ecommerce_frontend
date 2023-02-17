@@ -34,9 +34,9 @@ function Perfil(props) {
         <h2 className="text-center m-2">Bienvenido a un panel de control</h2>
       </Container>
       <Container className="m-5">
-        <p className="text-left m-2">Nombre del usuario: {Object.keys(data).length==0 ? <p>waiting</p> : data.name}</p>
+        <p className="text-left m-2">Nombre del usuario: {Object.keys(data).length==0 ? <span>waiting</span> : data.name}</p>
         <p className="text-left m-2">Usuario: {user}</p>
-        <p className="text-left m-2">Email: {Object.keys(data).length==0 ?  <p>waiting</p>: data.email}</p>
+        <p className="text-left m-2">Email: {Object.keys(data).length==0 ?  <span>waiting</span>: data.email}</p>
       </Container>
 
       <Container>
