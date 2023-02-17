@@ -45,7 +45,7 @@ function TableCart(props) {
         <Container className="mt-3 text-center">
           <p className="text-center">
             Favor ingrese a su cuenta para poder efectuar el pago:{" "}
-            <a href="./Login">Login</a>
+            <a href="../Login">Login</a>
           </p>
         </Container>
       )}
