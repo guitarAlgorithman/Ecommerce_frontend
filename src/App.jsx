@@ -25,6 +25,7 @@ function App() {
         <ShoppingCartState>
           <ProductState>
             <Routes>
+              <Route path="Ecommerce_frontend" element={<ProductList />} />
               <Route index element={<ProductList />} />
               <Route path="product/:id" element={<Product />} />
               <Route path="Login" element={<Login />} />
