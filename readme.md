@@ -1,7 +1,7 @@
 
 # Frontend
 
-El presente trabajo enmarcado en el Bootcamp Fullstack de la UDD, busca representar una tienda de cursos. 
+El presente trabajo enmarcado en el Bootcamp Fullstack de la UDD, busca representar una tienda de cursos mediante REACT para el Frontend. 
 
 ## Prototipado simple:
 
