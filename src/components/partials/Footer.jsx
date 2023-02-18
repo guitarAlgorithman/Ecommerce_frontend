@@ -8,8 +8,8 @@ export const Footer = () => {
       <div className="content m-2">
         <footer className="row">
           <div className="sozial col-xs-6 col-sm-6 col-sm-push-6">
-            <ul className="row">
-              <li className="col-sm-2">
+            <ul className="row text-center">
+              <li className="col-3">
                 <a href="#">
                   <Image
                     className="logo"
@@ -17,7 +17,7 @@ export const Footer = () => {
                   ></Image>
                 </a>
               </li>
-              <li className="col-sm-2">
+              <li className="col-3">
                 <a href="#">
                   <Image
                     className="logo"
@@ -25,7 +25,7 @@ export const Footer = () => {
                   ></Image>
                 </a>
               </li>
-              <li className="col-sm-2">
+              <li className="col-3">
                 <a href="#">
                   <Image
                     className="logo"
@@ -33,7 +33,7 @@ export const Footer = () => {
                   ></Image>
                 </a>
               </li>
-              <li className="col-sm-2">
+              <li className="col-3">
                 <a href="#">
                   <Image
                     className="logo"
